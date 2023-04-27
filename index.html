@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ubah Background Kotak</title>
+	<style type="text/css">
+		#kotak {
+			width: 300px;
+			height: 300px;
+			background-size: cover;
+			align-items: center;
+			justify-content: center;
+			margin: auto;
+		}
+	</style>
+</head>
+<body>
+	<div id="kotak"></div>
+	<script type="text/javascript">
+		var gambar = 1; // inisialisasi variabel gambar
+
+		setInterval(function() {
+			// ubah background gambar
+			if (gambar == 1) {
+				document.getElementById('kotak').style.backgroundImage = "url('https://javalaku.com/wp-content/uploads/2022/05/Gambar-Sketsa-Minion.jpg')";
+			} else if (gambar == 2) {
+				document.getElementById('kotak').style.backgroundImage = "url('https://i.pinimg.com/564x/e8/48/5a/e8485a1df32fd1e73131481aee806583.jpg')";
+			} else if (gambar == 3) {
+				document.getElementById('kotak').style.backgroundImage = "url('https://i.pinimg.com/564x/d3/ce/c3/d3cec3d26c8f5645695107bb9b681cbb.jpg')";
+			} else if (gambar == 4) {
+				document.getElementById('kotak').style.backgroundImage = "url('https://i.pinimg.com/564x/8c/c4/88/8cc4883fa7c719e300f43bda0b8df8b4.jpg')";
+			} else {
+				document.getElementById('kotak').style.backgroundImage = "url('https://i.pinimg.com/564x/08/71/e7/0871e7d0c73476d8e34875b208fcea97.jpg')";
+				gambar = 0;
+			}
+
+			gambar++; // increment variabel gambar
+		}, 4000); // set interval selama 4 detik
+	</script>
+</body>
+</html>
